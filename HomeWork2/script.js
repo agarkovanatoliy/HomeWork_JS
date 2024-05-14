@@ -69,7 +69,7 @@ const numberDivisions = num => {
 
 const number = +prompt('Введите число');
 
-if(number < 0 ||(typeof number === "string")){
+if(number < 0 ){
     console.log('Некоректное значение')
 }else{
     numberDivisions(number);
