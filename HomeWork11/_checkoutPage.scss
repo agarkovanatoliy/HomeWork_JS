@@ -1,0 +1,126 @@
+.checkout{
+    display: flex;
+    flex-direction: column;
+    padding-top: 46px;
+    padding-bottom: 100px;
+
+
+    &__line{
+        padding-bottom: 40px;
+        padding-top: 40px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    &__line-summary{
+        list-style-type: none;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorText;
+    }
+
+    &__shippingAdress{
+        padding-top: 39px;
+        padding-left: 35px;
+        display: flex;
+        flex-direction: row;
+        gap: 291px;
+    }
+
+    &__shippingAdress-title{
+        padding-top: 13px;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorText;
+    }
+
+    &__shippingAdress-instructions{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextPageCheckout;
+    }
+
+    &__shippingAdress-label{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__shippingAdress-label-item{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    &__shippingAdress-instructions-fa{
+        margin-top: 15px;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextPageCheckout;
+    }
+
+    &__shippingAdress-button{
+        margin-top: 32px;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        width: 180px;
+        height: 50px;
+        &:hover{
+            @include targetingEffectButton();
+        }
+    }
+
+    &__requiredText{
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #ff0d0d;
+    }
+
+    &__shippingAdress-right-input{
+        margin-top: 16px;
+        margin-bottom: 22px;
+        width: 390px;
+        height: 45px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+    }
+
+    &__shippingAdress-right-loginForgot{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: self-end;
+        gap: 32px;
+    }
+
+    &__shippingAdress-forgotlink{
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorText;
+        padding-bottom: 14px;
+    }
+
+}

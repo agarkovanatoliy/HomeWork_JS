@@ -1,0 +1,67 @@
+.banner{
+    padding: 98px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+    &__big-card1{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    &__big-card2{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    &__column{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__card{
+        width: 560px;
+        position: relative;
+    }
+
+    &__card img{
+        width: 100%;
+    }
+
+    &__text{
+        position: absolute;
+        top: 26px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 175px;
+        height: 82px;
+        background-color: #ffffff;
+        padding: 16px 20px;
+    }
+
+    &__text h2 {
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #222222;
+    }
+
+    &__text h1 {
+        font-size: 30px;
+        color: $colorSelectSite;
+    }
+
+    &__card:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
