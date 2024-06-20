@@ -1,0 +1,287 @@
+.shoppingCart{
+
+    &__content{
+        padding-top: 24px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    &__content-title{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eaeaea;
+        gap: 96px;
+    }
+
+    &__content-title-item-first{
+        padding-right: 235px;
+    }
+
+    &__content-title-item{
+        display: block;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.015em;
+        color: $colorText;
+    }
+
+    &__content-item{
+        padding-top: 24px;
+        border-bottom: 1px solid #eaeaea;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__content-item-info{
+        display: flex;
+        flex-direction: row;
+        gap: 21px;
+        padding-right: 200px;
+    }
+
+    &__content-item-info-img:hover {
+        filter: brightness(30%);
+    }
+
+    &__content-item-description{
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+    }
+
+    &__content-item-name{
+        display: block;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $colorText;
+        padding-top: 13px;
+    }
+
+    &__content-item-colorSize{
+        padding-bottom: 22px;
+        display: block;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #575757;
+    }
+
+    &__content-item-colorSize-data{
+        font-weight: 300;
+        color: $colorTextPageShoppingCart;
+    }
+
+    &__content-item-price{
+        padding-right: 128px;
+        display: block;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextPageShoppingCart;
+    }
+
+    &__content-item-inputField{
+        margin-right: 108px;
+        display: block;
+        width: 54px;
+        height: 30px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        text-align: center;
+    }
+
+    &__content-item-shipping{
+        padding-right: 126px;
+        display: block;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextPageShoppingCart;
+    }
+
+    &__content-item-subtotal{
+        padding-right: 127px;
+        display: block;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextPageShoppingCart;
+    }
+
+    &__content-item-action:hover{
+        filter: invert(57%) sepia(19%) saturate(2664%) hue-rotate(311deg) brightness(102%) contrast(89%);
+    }
+
+    &__button{
+        padding-top: 44px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__button-item{
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        width: 225px;
+        height: 50px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+
+        &:hover{
+            @include targetingEffectButton();
+        }
+    }
+
+    &__info{
+        padding-top: 63px;
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+        padding-bottom: 100px;
+    }
+
+    &__info-addres{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info-title{
+        padding-bottom: 22px;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorText;
+    }
+
+    &__info-select{
+        margin-bottom: 20px;
+        width: 357px;
+        height: 45px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #b1b1b1;
+    }
+
+    &__info-input{
+        margin-bottom: 20px;
+        padding-left: 17px;
+        width: 338px;
+        height: 45px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #b1b1b1;
+    }
+
+    &__info-button{
+        font-family: Lato;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        width: 100px;
+        height: 35px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+
+        &:hover{
+            @include targetingEffectButton();
+        }
+    }
+
+    &__info-discount{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info-discount-description{
+        padding-top: 6px;
+        padding-bottom: 24px;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    &__info-checkout{
+        width: 360px;
+        height: 214px;
+        background-color: #f5f3f3;
+    }
+
+    &__info-checkout-price{
+        padding-top: 14px;
+        display: block;
+        text-align: right;
+        margin-right: 41px;
+        margin-top: 26px;
+        font-family: Lato;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #4a4a4a;
+    }
+
+    &__info-checkout-priceFinal{
+        padding-top: 14px;
+        display: block;
+        text-align: right;
+        margin-right: 41px;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorText;
+    }
+
+    &__info-checkout-priceFinal-colored{
+        color: $colorSelectSite;
+    }
+
+    &__info-checkout-button{
+        margin-left: 44px;
+        margin-top: 40px;
+        width: 273px;
+        height: 50px;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: $colorSelectSite;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+
+        &:hover{
+            @include targetingEffectButton();
+        }
+    }
+}
+
