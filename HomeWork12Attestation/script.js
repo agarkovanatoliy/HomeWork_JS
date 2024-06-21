@@ -170,28 +170,8 @@ function displayProduct(sum) {
             </div>
         `
     );
-    // shopCardEl.insertAdjacentHTML("beforeend", `
-    //     <div class="shoppingCart__content-item" id="${el.id}">
-    //         <div class="shoppingCart__content-item-info">
-    //             <a class="shoppingCart__content-item-info-img" href="singlePage.html"><img class="shoppingCart__content-item-img"
-    //                     src="${el.img}" alt="${el.title}"></a>
-    //             <div class="shoppingCart__content-item-description">
-    //                 <h3 class="shoppingCart__content-item-name">${el.title}</h3>
-    //                 <span class="shoppingCart__content-item-colorSize">Color:
-    //                     <span class="shoppingCart__content-item-colorSize-data">Red</span><br>
-    //                     Size: <span class="shoppingCart__content-item-colorSize-data">Xll</span>
-    //                 </span>
-    //             </div>
-    //         </div>
-    //         <span class="shoppingCart__content-item-price">$${el.price}</span>
-    //         <input class="shoppingCart__content-item-inputField" type="text" name="" id="" value="2">
-    //         <span class="shoppingCart__content-item-shipping">FREE</span>
-    //         <span class="shoppingCart__content-item-subtotal">$300</span>
-    //         <a class="shoppingCart__content-item-action" href="#"><img src="./img/remove_icon.png"
-    //             alt="del"></a>
-    //     </div>
-    // `);
   });
+  
   cardToBascet.insertAdjacentHTML(
     "beforeend",
     `
